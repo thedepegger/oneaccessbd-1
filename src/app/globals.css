@@ -1,0 +1,65 @@
+/* Updated: 2025-09-26T20:53:42.788Z */
+/* Updated: 2025-09-26T17:37:51.586Z */
+/* Updated: 2025-09-26T16:53:54.602Z */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  body {
+    @apply bg-scheme-background text-scheme-text antialiased;
+    font-family: var(--font-sans);
+  }
+
+  img {
+    @apply select-none;
+  }
+}
+
+@layer components {
+  .heading-h1 {
+    @apply text-4xl leading-tight tracking-tight md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight;
+  }
+
+  .heading-h2 {
+    @apply text-3xl leading-tight tracking-tight md:text-4xl lg:text-5xl;
+  }
+
+  .heading-h4 {
+    @apply text-xl leading-tight md:text-2xl;
+  }
+
+  .heading-h5 {
+    @apply text-lg leading-tight md:text-xl;
+  }
+
+  .heading-h6 {
+    @apply text-base leading-tight md:text-lg;
+  }
+
+  .text-medium {
+    @apply text-base leading-relaxed text-slate-600 md:text-lg;
+  }
+
+  .text-regular {
+    @apply text-sm leading-relaxed text-slate-600;
+  }
+
+  .text-small {
+    @apply text-sm text-slate-600;
+  }
+
+  .text-tiny {
+    @apply text-xs text-slate-500;
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
