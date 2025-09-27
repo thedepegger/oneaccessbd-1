@@ -33,11 +33,11 @@ export function Faq4() {
                 icon={
                   <RxPlus className="size-7 shrink-0 text-current transition-transform duration-300 md:size-8" />
                 }
-                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
+                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
               >
                 What is the subscription fee for 3 months?
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
+              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
                 The ChatGPT Plus 3-Month package costs 499 BDT ($4.99).
               </AccordionContent>
             </AccordionItem>
@@ -48,11 +48,11 @@ export function Faq4() {
                 icon={
                   <RxPlus className="size-7 shrink-0 text-current transition-transform duration-300 md:size-8" />
                 }
-                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
+                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
               >
                 How long does it take for activation?
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
+              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
                 Your subscription will be activated within 12 hours after we
                 receive your payment and account information.
               </AccordionContent>
@@ -64,11 +64,11 @@ export function Faq4() {
                 icon={
                   <RxPlus className="size-7 shrink-0 text-current transition-transform duration-300 md:size-8" />
                 }
-                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
+                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
               >
                 Do I need a new ChatGPT account or can I use my existing one?
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
+              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
                 This offer is only valid for newly created ChatGPT accounts.
                 Existing accounts are not eligible.
               </AccordionContent>
@@ -80,11 +80,11 @@ export function Faq4() {
                 icon={
                   <RxPlus className="size-7 shrink-0 text-current transition-transform duration-300 md:size-8" />
                 }
-                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
+                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
               >
                 Why do I need to share my email and password?
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
+              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
                 We need your ChatGPT login info to activate the subscription.
                 After activation, you can change your password for extra
                 security.
@@ -97,11 +97,11 @@ export function Faq4() {
                 icon={
                   <RxPlus className="size-7 shrink-0 text-current transition-transform duration-300 md:size-8" />
                 }
-                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
+                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
               >
                 Can I use this offer on an old account?
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
+              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
                 No, this offer is only applicable to new accounts. You must
                 create a new one before purchase.
               </AccordionContent>
@@ -113,11 +113,11 @@ export function Faq4() {
                 icon={
                   <RxPlus className="size-7 shrink-0 text-current transition-transform duration-300 md:size-8" />
                 }
-                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
+                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
               >
                 Is the subscription refundable?
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
+              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
                 No, once the subscription is activated, there is no refund
                 option.
               </AccordionContent>
@@ -129,11 +129,11 @@ export function Faq4() {
                 icon={
                   <RxPlus className="size-7 shrink-0 text-current transition-transform duration-300 md:size-8" />
                 }
-                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
+                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
               >
                 What if ChatGPT service goes down?
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
+              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
                 That depends on OpenAI's servers and policies. We are not
                 responsible for any service downtime.
               </AccordionContent>
@@ -145,11 +145,11 @@ export function Faq4() {
                 icon={
                   <RxPlus className="size-7 shrink-0 text-current transition-transform duration-300 md:size-8" />
                 }
-                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
+                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
               >
                 Will I get support after activation?
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
+              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
                 Our support is limited to activation only. Any issues after that
                 are the user's responsibility, and One Access BD will not be
                 liable.
@@ -162,11 +162,11 @@ export function Faq4() {
                 icon={
                   <RxPlus className="size-7 shrink-0 text-current transition-transform duration-300 md:size-8" />
                 }
-                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
+                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
               >
                 Can I transfer my subscription to another account?
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
+              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
                 No, once activated, the subscription remains on the same account
                 and cannot be transferred.
               </AccordionContent>
@@ -178,11 +178,11 @@ export function Faq4() {
                 icon={
                   <RxPlus className="size-7 shrink-0 text-current transition-transform duration-300 md:size-8" />
                 }
-                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
+                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
               >
                 Can it be used from any country?
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
+              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
                 Yes, ChatGPT Plus can be used worldwide. Once activated, you can
                 log in from anywhere.
               </AccordionContent>
@@ -194,11 +194,11 @@ export function Faq4() {
                 icon={
                   <RxPlus className="size-7 shrink-0 text-current transition-transform duration-300 md:size-8" />
                 }
-                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
+                className="text-medium md:py-5 [&[data-state=open]>svg]:rotate-45 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] data-[state=open]:[&>svg]:text-[#0E0F0C] rounded-t-xl px-5 md:px-6"
               >
                 Why is the price so low?
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#80EE67] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
+              <AccordionContent className="md:pb-6 bg-[#F2F2F2] data-[state=open]:bg-[#7eff5eff] data-[state=open]:text-[#0E0F0C] px-5 md:px-6 rounded-b-xl">
                 We use promotional codes, which allow us to offer it at a much
                 lower price than the official one. This is why the offer is for
                 a limited time only.
@@ -213,7 +213,7 @@ export function Faq4() {
           <p className="text-medium">Need help? Contact us anytime.</p>
           <div className="mt-6 md:mt-8">
             <Button title="Contact Us on Facebook" variant="secondary">
-              Contact Us on Facebook
+              Chat With Us on Facebook
             </Button>
           </div>
         </div>

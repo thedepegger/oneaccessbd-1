@@ -27,7 +27,7 @@ export function Stats29() {
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
               <Button title="Get ChatGPT Plus" variant="secondary">
-                Get ChatGPT Plus
+                Discover Our Story
               </Button>
               <Button
                 title="See Our Reviews"
@@ -47,14 +47,14 @@ export function Stats29() {
                 2020
               </p>
               <h3 className="heading-h6 font-bold mt-auto">Founded in 2020</h3>
-              <p className="mt-2">Serving customers since October 2020</p>
+              <p className="mt-2">We started our journey back in October 2020 with one simple mission: to make premium digital tools accessible to everyone. From humble beginnings, we’ve grown into a trusted name. Every step forward has been driven by your support.</p>
             </Card>
           </Fragment>
           <Fragment>
             <div>
               <img
                 className="aspect-[3/2] size-full rounded-image object-cover"
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                src="/assets/banner/banner-1.jpeg"
                 alt="Relume placeholder image"
               />
             </div>
@@ -62,26 +62,26 @@ export function Stats29() {
           <Fragment>
             <Card className="p-8">
               <p className="mb-8 text-[3.5rem] leading-[1.3] font-bold md:mb-10 md:text-[4rem] lg:mb-12 lg:text-[5rem]">
-                2020
+                100%
               </p>
-              <h3 className="heading-h6 font-bold">Founded in 2020</h3>
-              <p className="mt-2">Serving customers since October 2020</p>
+              <h3 className="heading-h6 font-bold">100% Satisfaction Rate</h3>
+              <p className="mt-2">Our users don’t just buy, they stay. Every review, every recommendation, is proof of the trust we’ve built. Your satisfaction is what keeps us going strong.</p>
             </Card>
           </Fragment>
           <Fragment>
             <Card className="p-8 [&:nth-last-child(2)]:order-last [&:nth-last-child(2)]:md:order-none">
               <p className="mb-8 text-[3.5rem] leading-[1.3] font-bold md:mb-10 md:text-[4rem] lg:mb-12 lg:text-[5rem]">
-                2020
+                12K+
               </p>
-              <h3 className="heading-h6 font-bold">Founded in 2020</h3>
-              <p className="mt-2">Serving customers since October 2020</p>
+              <h3 className="heading-h6 font-bold">12,000+ Customers</h3>
+              <p className="mt-2">Over 12,000 people worldwide have joined our community. From students to professionals, creators to coders we’ve helped thousands achieve more with the right tools. And the number keeps growing every single day.</p>
             </Card>
           </Fragment>
           <Fragment>
             <div>
               <img
                 className="aspect-[3/2] size-full rounded-image object-cover"
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+                src="/assets/banner/banner-3.jpeg"
                 alt="Relume placeholder image"
               />
             </div>

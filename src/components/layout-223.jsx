@@ -11,7 +11,7 @@ export function Layout223() {
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-x-20">
           <div className="order-2 md:order-1">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src="/assets/banner/banner-4.png"
               className="w-full rounded-image object-cover"
               alt="Relume placeholder image"
             />
@@ -21,9 +21,9 @@ export function Layout223() {
               <div className="flex self-start">
                 <div className="mr-6 flex-none self-start">
                   <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                    src="/assets/icons/IcRoundContactEmergency.svg"
                     className="size-12"
-                    alt="Relume logo"
+                    alt="Emergency contact icon"
                   />
                 </div>
                 <div>
@@ -38,9 +38,9 @@ export function Layout223() {
               <div className="flex self-start">
                 <div className="mr-6 flex-none self-start">
                   <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                    src="/assets/icons/IcBaselineScreenShare.svg"
                     className="size-12"
-                    alt="Relume logo"
+                    alt="Screen share icon"
                   />
                 </div>
                 <div>
@@ -53,9 +53,9 @@ export function Layout223() {
               <div className="flex self-start">
                 <div className="mr-6 flex-none self-start">
                   <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                    src="/assets/icons/IcBaselineMonetizationOn.svg"
                     className="size-12"
-                    alt="Relume logo"
+                    alt="Payments icon"
                   />
                 </div>
                 <div>
@@ -63,17 +63,16 @@ export function Layout223() {
                     Make the Payment
                   </h3>
                   <p>
-                    Complete your payment securely through our official Facebook
-                    Page.
+                    Complete your payment securely through our Facebook Page.
                   </p>
                 </div>
               </div>
               <div className="flex self-start">
                 <div className="mr-6 flex-none self-start">
                   <img
-                    src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                    src="/assets/icons/IcOutlineAccessTimeFilled.svg"
                     className="size-12"
-                    alt="Relume logo"
+                    alt="Clock icon"
                   />
                 </div>
                 <div>
@@ -85,9 +84,9 @@ export function Layout223() {
               </div>
             </div>
             <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-              <Button variant="secondary">Get Started Now</Button>
+              <Button variant="secondary">Got Questions?</Button>
               <Button variant="link" size="link" iconRight={<RxChevronRight />}>
-                Message Us on Facebook
+                Chat With Us
               </Button>
             </div>
           </div>

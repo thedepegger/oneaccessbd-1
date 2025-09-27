@@ -1,88 +1,159 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import React, { useState } from "react";
-
-const useForm = () => {
-  const [email, setEmail] = useState("");
-  const handleSetEmail = (event) => {
-    setEmail(event.target.value);
-  };
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log({ email });
-  };
-  return {
-    email,
-    handleSetEmail,
-    handleSubmit,
-  };
-};
+import React, { useId } from "react";
+import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 
 export function Footer17() {
-  const formState = useForm();
+  const marqueeItems = Array(4).fill("Be One, Be Accessible");
+
   return (
-    <footer className="px-[5%] py-12 md:py-18 lg:py-20">
-      <div className="container">
-        <div className="grid grid-cols-1 items-start justify-between gap-x-[8vw] gap-y-12 pb-12 sm:gap-y-10 md:gap-y-14 md:pb-18 lg:grid-cols-[1fr_0.5fr] lg:pb-20">
-          <div className="flex flex-col items-start">
-            <a href="#" className="mb-8">
-              <img
-                src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
-                alt="Logo image"
-                className="inline-block"
-              />
-            </a>
-          </div>
-          <div className="max-w-md lg:min-w-[25rem]">
-            <div>
-              <form
-                className="mb-3 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-[1fr_max-content] sm:gap-y-4 md:gap-4"
-                onSubmit={formState.handleSubmit}
+    <>
+      <footer className="px-[5%] py-12 md:py-18 lg:py-20 bg-black text-white">
+        <div className="container">
+          <div className="flex flex-col items-center justify-center gap-6 pb-12 sm:gap-y-10 md:gap-y-14 md:pb-18 lg:pb-20">
+            <img
+              src="/white-logo.svg"
+              alt="One Access BD logo"
+              className="h-16 w-auto"
+            />
+            <div className="flex items-center gap-4 text-2xl text-white">
+              <a
+                href="https://www.facebook.com/oneaccessbd"
+                aria-label="Follow on Facebook"
+                className="footer-icon footer-icon--facebook"
               >
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="Enter your email"
-                  value={formState.email}
-                  onChange={formState.handleSetEmail}
-                />
-                <Button title="Subscribe" variant="secondary" size="sm">
-                  Subscribe
-                </Button>
-              </form>
-              <p className="text-tiny">
-                By subscribing you agree to with our Privacy Policy
-              </p>
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://m.me/oneaccessbd"
+                aria-label="Message on Messenger"
+                className="footer-icon footer-icon--messenger"
+              >
+                <MessengerIcon />
+              </a>
+              <a
+                href="https://t.me/oneaccessbd"
+                aria-label="Join on Telegram"
+                className="footer-icon footer-icon--telegram"
+              >
+                <FaTelegramPlane />
+              </a>
             </div>
           </div>
+          <div className="pb-8 md:pb-10 lg:pb-12">
+            <div className="relative overflow-hidden">
+              <div className="footer-marquee flex w-max items-center gap-16 whitespace-nowrap text-5xl font-extrabold uppercase tracking-tight text-white sm:text-6xl lg:text-7xl">
+                {marqueeItems.map((text, index) => (
+                  <span key={index}>{text}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="h-px w-full bg-white/20" />
+          <div className="text-small flex flex-col items-start justify-start pt-6 pb-4 md:flex-row md:items-center md:justify-between md:pt-8 md:pb-0 md:text-center">
+            <ul className="text-small grid grid-flow-row grid-cols-[max-content] gap-y-4 md:grid-flow-col md:gap-x-6 md:gap-y-0 lg:justify-center text-white">
+              <li className="underline">
+                <a className="text-white" href="#">Privacy Policy</a>
+              </li>
+              <li className="underline">
+                <a className="text-white" href="#">Terms & Conditions</a>
+              </li>
+              <li className="underline">
+                <a className="text-white" href="#">Refund Policy</a>
+              </li>
+            </ul>
+            <p className="text-white">© 2024 One Access BD. All rights reserved.</p>
+          </div>
         </div>
-        <div className="pb-8 md:pb-10 lg:pb-12">
-          <a href="#">
-            <img
-              src="https://d22po4pjz3o32e.cloudfront.net/company-name.svg"
-              alt="Company image"
-              className="inline-block"
-            />
-          </a>
-        </div>
-        <div className="h-px w-full bg-scheme-border" />
-        <div className="text-small flex flex-col items-start justify-start pt-6 pb-4 md:flex-row md:items-center md:justify-between md:pt-8 md:pb-0 md:text-center">
-          <ul className="text-small grid grid-flow-row grid-cols-[max-content] gap-y-4 md:grid-flow-col md:gap-x-6 md:gap-y-0 lg:justify-center">
-            <li className="underline">
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li className="underline">
-              <a href="#">Terms & Conditions</a>
-            </li>
-            <li className="underline">
-              <a href="#">Refund Policy</a>
-            </li>
-          </ul>
-          <p>© 2024 Relume. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
+      </footer>
+      <style jsx>{`
+        @keyframes footer-marquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-25%);
+          }
+        }
+
+        .footer-marquee {
+          animation: footer-marquee 10s linear infinite;
+        }
+
+        :global(.footer-icon) {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+          transition: color 200ms ease, transform 200ms ease, -webkit-text-fill-color 200ms ease;
+        }
+
+        :global(.footer-icon:hover) {
+          transform: translateY(-2px);
+        }
+
+        :global(.footer-icon--facebook:hover) {
+          color: #0765fe;
+        }
+
+        :global(.footer-icon--messenger svg) {
+          width: 1em;
+          height: 1em;
+        }
+
+        :global(.footer-icon--messenger svg path) {
+          transition: opacity 200ms ease;
+        }
+
+        :global(.footer-icon--messenger .messenger-base-path) {
+          fill: #ffffff;
+        }
+
+        :global(.footer-icon--messenger .messenger-gradient-path) {
+          opacity: 0;
+        }
+
+        :global(.footer-icon--messenger:hover .messenger-base-path) {
+          opacity: 0;
+        }
+
+        :global(.footer-icon--messenger:hover .messenger-gradient-path) {
+          opacity: 1;
+        }
+
+        :global(.footer-icon--telegram:hover) {
+          color: #27a5e5;
+        }
+      `}</style>
+    </>
+  );
+}
+
+function MessengerIcon() {
+  const gradientId = useId();
+  return (
+    <svg
+      className="size-[1em]"
+      viewBox="0 0 512 512"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        <linearGradient id={gradientId} gradientTransform="rotate(170)">
+          <stop offset="20%" stopColor="#00ADFF" />
+          <stop offset="100%" stopColor="#0070FF" />
+        </linearGradient>
+      </defs>
+      <path
+        className="messenger-base-path"
+        fill="#ffffff"
+        d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z"
+      />
+      <path
+        className="messenger-gradient-path"
+        fill={`url(#${gradientId})`}
+        d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z"
+      />
+    </svg>
   );
 }

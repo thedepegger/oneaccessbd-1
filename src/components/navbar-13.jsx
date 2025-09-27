@@ -135,8 +135,8 @@ export function Navbar13() {
       >
         <a href="#" className="shrink-0 min-w-[112px]">
           <img
-            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/logo-1758908738168.png"
-            alt="Team One Access BD logo"
+            src="/logo.svg"
+            alt="One Access BD logo"
             className="block h-6 w-auto md:h-7 lg:h-8 shrink-0 object-contain z-10"
           />
         </a>
@@ -173,7 +173,7 @@ export function Navbar13() {
                   <div className="sticky top-0 z-[1] grid grid-cols-[auto_1fr_auto] items-center px-5 py-4 border-b-0 bg-transparent">
                     <a href="#" className="shrink-0 min-w-[112px]" onClick={() => useActive.toggleMobileMenu()}>
                       <img
-                        src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/logo-1758908738168.png"
+                        src="/logo.svg"
                         alt="Team One Access BD logo"
                         className="block h-6 w-auto md:h-7 lg:h-8"
                       />
@@ -189,7 +189,7 @@ export function Navbar13() {
                       >
                         <span
                           aria-hidden
-                          className={`pointer-events-none absolute inset-0 z-0 rounded-full bg-gradient-to-r from-[#97F182] to-[#88E16F] transition-opacity duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-[opacity] ${scrolled ? "opacity-100" : "opacity-0"}`}
+                          className={`pointer-events-none absolute inset-0 z-0 rounded-full bg-gradient-to-r from-[#7eff5eff] to-[#5dd53fff] transition-opacity duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-[opacity] ${scrolled ? "opacity-100" : "opacity-0"}`}
                         />
                         <span className="relative z-10">Get Plus</span>
                       </Button>
