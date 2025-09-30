@@ -10,13 +10,6 @@ export function PolicyPage({ policyKey }) {
   const language = useLanguage();
   const isBangla = language === "bn";
   const content = POLICY_CONTENT[policyKey]?.[isBangla ? "bn" : "en"];
-
-  if (!content) {
-    return null;
-  }
-
-  const banglaFontClass = isBangla ? "font-bangla" : "";
-  const backLabel = isBangla ? "পেছনে যান" : "Back";
   const [isPressed, setIsPressed] = useState(false);
   const timerRef = useRef(null);
 
@@ -27,6 +20,13 @@ export function PolicyPage({ policyKey }) {
       }
     };
   }, []);
+
+  if (!content) {
+    return null;
+  }
+
+  const banglaFontClass = isBangla ? "font-bangla" : "";
+  const backLabel = isBangla ? "পেছনে যান" : "Back";
 
   const handleBack = () => {
     if (timerRef.current) return;
