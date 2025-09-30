@@ -1,21 +1,55 @@
 "use client";
 
-import React, { useId } from "react";
+import React, { useCallback, useId } from "react";
 import { FaFacebookF, FaTelegramPlane } from "react-icons/fa";
+import { useLanguage } from "@/hooks/use-language";
 
 export function Footer17() {
+  const language = useLanguage();
+  const isBangla = language === "bn";
+  const banglaFontClass = isBangla ? "font-bangla" : "";
   const marqueeItems = Array(4).fill("Be One, Be Accessible");
+
+  const handleLogoClick = useCallback((event) => {
+    event.preventDefault();
+    if (typeof window !== "undefined") {
+      window.location.reload();
+    }
+  }, []);
+
+  const footerLinks = isBangla
+    ? [
+        { label: "প্রাইভেসি পলিসি", href: "/privacy-policy" },
+        { label: "শর্ত ও নিয়মাবলী", href: "/terms-and-conditions" },
+        { label: "রিফান্ড নীতিমালা", href: "/refund-policy" },
+      ]
+    : [
+        { label: "Privacy Policy", href: "/privacy-policy" },
+        { label: "Terms & Conditions", href: "/terms-and-conditions" },
+        { label: "Refund Policy", href: "/refund-policy" },
+      ];
+
+  const copyrightText = isBangla
+    ? "© ২০২৫ ওয়ান একসেস বিডি. সকল অধিকার সংরক্ষিত।"
+    : "© 2025 One Access BD. All rights reserved.";
 
   return (
     <>
       <footer className="px-[5%] py-12 md:py-18 lg:py-20 bg-black text-white">
         <div className="container">
           <div className="flex flex-col items-center justify-center gap-6 pb-12 sm:gap-y-10 md:gap-y-14 md:pb-18 lg:pb-20">
-            <img
-              src="/white-logo.svg"
-              alt="One Access BD logo"
-              className="h-16 w-auto"
-            />
+            <a
+              href="/"
+              onClick={handleLogoClick}
+              aria-label="Reload page from footer logo"
+              className="inline-flex"
+            >
+              <img
+                src="/white-logo.svg"
+                alt="One Access BD logo"
+                className="h-16 w-auto"
+              />
+            </a>
             <div className="flex items-center gap-4 text-2xl text-white">
               <a
                 href="https://www.facebook.com/oneaccessbd"
@@ -50,19 +84,17 @@ export function Footer17() {
             </div>
           </div>
           <div className="h-px w-full bg-white/20" />
-          <div className="text-small flex flex-col items-start justify-start pt-6 pb-4 md:flex-row md:items-center md:justify-between md:pt-8 md:pb-0 md:text-center">
+          <div className="text-small flex flex-col items-start justify-start gap-3 pt-6 pb-4 md:flex-row md:items-center md:justify-between md:gap-0 md:pt-8 md:pb-0 md:text-center">
             <ul className="text-small grid grid-flow-row grid-cols-[max-content] gap-y-4 md:grid-flow-col md:gap-x-6 md:gap-y-0 lg:justify-center text-white">
-              <li className="underline">
-                <a className="text-white" href="#">Privacy Policy</a>
-              </li>
-              <li className="underline">
-                <a className="text-white" href="#">Terms & Conditions</a>
-              </li>
-              <li className="underline">
-                <a className="text-white" href="#">Refund Policy</a>
-              </li>
+              {footerLinks.map((link) => (
+                <li key={link.label} className="underline">
+                  <a className={`text-white ${banglaFontClass}`} href={link.href}>
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
-            <p className="text-white">© 2024 One Access BD. All rights reserved.</p>
+            <p className={`text-white ${banglaFontClass}`}>{copyrightText}</p>
           </div>
         </div>
       </footer>

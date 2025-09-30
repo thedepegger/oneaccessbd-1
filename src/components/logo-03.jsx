@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useLanguage } from "@/hooks/use-language";
 
 const ROW_ONE_LOGOS = [
   { src: "/assets/logo/impact-academy.png", alt: "Impact Academy" },
@@ -41,11 +42,13 @@ const renderLogoRow = (logos, prefix, { animationDelay } = {}) => {
 };
 
 export function Logo3() {
+  const language = useLanguage();
+  const heading = language === "bn" ? "বাংলাদেশের টপ ব্র্যান্ডগুলোর সাথে আমাদের যাত্রা" : "Used by the Bangladesh's Top Brands";
   return (
     <section className="overflow-hidden py-12 md:py-16 lg:py-20">
       <div className="container mb-8 max-w-lg px-[5%] md:mb-10 lg:mb-12">
         <h1 className="heading-h6 text-center font-bold">
-          Used by the Bangladesh's Top Brands
+          {heading}
         </h1>
       </div>
       <div className="flex items-center overflow-hidden pt-7 md:pt-0">

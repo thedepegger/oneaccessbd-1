@@ -16,6 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          defer
+          data-website-id="68dc56cbe6e445462fa86c48"
+          data-domain="oneaccessbd.com"
+          src="https://datafa.st/js/script.js"
+        ></script>
+      </head>
       <body className="antialiased">
         <ErrorReporter />
         <Script

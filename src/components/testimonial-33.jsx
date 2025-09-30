@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useLanguage } from "@/hooks/use-language";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { motion, useScroll, useTransform } from "motion/react";
 import React, { Fragment, useId, useRef } from "react";
@@ -50,6 +51,26 @@ const useAnimation = () => {
 
 export function Testimonial33() {
   const animationState = useAnimation();
+  const language = useLanguage();
+  const isBangla = language === "bn";
+  const banglaFontClass = isBangla ? "font-bangla" : "";
+
+  const copy = isBangla
+    ? {
+        heading: "কাস্টমারদের মুখে আমাদের গল্প!!",
+        description:
+          "হাজারো মানুষের আস্থা আর সন্তুষ্টির গল্পই আমাদের সবচেয়ে বড় অর্জন। শুধু প্রোডাক্ট নয়, আমরা দিই আস্থা। আর সেই আস্থা ফুটে উঠেছে হাজারো রিভিউতে।",
+        primaryCta: "আরও রিভিউ দেখুন",
+        secondaryCta: "আপনার অভিজ্ঞতা শেয়ার করুন",
+      }
+    : {
+        heading: "What Our Customers Say!!",
+        description:
+          "We're trusted by thousands of happy users. Here's what they think about One Access BD and their ChatGPT Plus experience.",
+        primaryCta: "Read More Reviews",
+        secondaryCta: "Share Your Experience",
+      };
+
   return (
     <section
       id="reviews"
@@ -59,25 +80,42 @@ export function Testimonial33() {
       <Card className="container grid min-h-svh auto-cols-fr grid-cols-1 bg-[#F2F2F2] lg:h-[90vh] lg:min-h-[auto] lg:grid-cols-[0.75fr_1fr] lg:overflow-visible">
         <div className="flex flex-col justify-center p-8 md:p-12">
           <div>
-            <h2 className="heading-h1 mb-5 font-bold md:mb-6">
-              What Our Customers Say
+            <h2 className={`heading-h1 mb-5 font-bold md:mb-6 ${banglaFontClass}`}>
+              {copy.heading}
             </h2>
-            <p className="text-medium">
-              We're trusted by thousands of happy users. Here's what they think
-              about One Access BD and their ChatGPT Plus experience.
-            </p>
+            <p className={`text-medium ${banglaFontClass}`}>{copy.description}</p>
           </div>
           <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-            <Button title="Read More Reviews" variant="secondary">
-              Read More Reviews
+            <Button
+              type="button"
+              title={copy.primaryCta}
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/oneaccessbd/reviews",
+                  "_blank",
+                  "noopener,noreferrer",
+                )
+              }
+              className={`bg-[#0EFF00] text-black shadow-[0_6px_0_0_rgba(0,0,0,0.35)] hover:bg-[#2bd60f] focus-visible:ring-[#32E910]/40 active:bg-[#28c30e] active:shadow-[0_2px_0_0_rgba(0,0,0,0.35)] ${banglaFontClass}`}
+            >
+              {copy.primaryCta}
             </Button>
             <Button
-              title="Share Your Experience"
+              title={copy.secondaryCta}
               variant="link"
               size="link"
               iconRight={<RxChevronRight />}
+              type="button"
+              onClick={() =>
+                window.open(
+                  "https://m.me/oneaccessbd",
+                  "_blank",
+                  "noopener,noreferrer",
+                )
+              }
+              className={banglaFontClass}
             >
-              Share Your Experience
+              {copy.secondaryCta}
             </Button>
           </div>
         </div>
