@@ -5,11 +5,34 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://oneaccessbd.com"),
   title: {
     default: "One Access BD",
     template: "%s | One Access BD",
   },
   description: "One Access BD official site.",
+  openGraph: {
+    title: "One Access BD",
+    description: "One Access BD official site.",
+    url: "https://oneaccessbd.com",
+    siteName: "One Access BD",
+    images: [
+      {
+        url: "/assets/banner/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "One Access BD preview banner",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "One Access BD",
+    description: "One Access BD official site.",
+    images: ["/assets/banner/preview.png"],
+  },
   icons: {
     icon: "/assets/icons/favicon.svg",
   },
