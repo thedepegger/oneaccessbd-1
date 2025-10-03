@@ -125,35 +125,35 @@ export function Navbar13() {
     },
   };
 
-  const collapsedClipPath = reduceMotion ? "inset(0% 0% 0% 0%)" : "inset(0% 0% 100% 0%)";
-  const expandedClipPath = "inset(0% 0% 0% 0%)";
-
-  const mobileMenuVariants = {
-    collapsed: {
-      opacity: 0,
-      clipPath: collapsedClipPath,
-      pointerEvents: "none",
-      paddingTop: 0,
-      paddingBottom: 0,
-      transition: {
-        duration: reduceMotion ? 0 : 0.28,
-        ease: reduceMotion ? "linear" : menuEase,
-        when: "afterChildren",
+  const mobileMenuVariants = React.useMemo(
+    () => ({
+      collapsed: {
+        opacity: 0,
+        height: 0,
+        pointerEvents: "none",
+        paddingTop: 0,
+        paddingBottom: 0,
+        transition: {
+          duration: reduceMotion ? 0 : 0.24,
+          ease: reduceMotion ? "linear" : menuEase,
+          when: "afterChildren",
+        },
       },
-    },
-    open: {
-      opacity: 1,
-      clipPath: expandedClipPath,
-      pointerEvents: "auto",
-      paddingTop: 14,
-      paddingBottom: 14,
-      transition: {
-        duration: reduceMotion ? 0 : 0.33,
-        ease: reduceMotion ? "linear" : menuEase,
-        when: "beforeChildren",
+      open: {
+        opacity: 1,
+        height: "auto",
+        pointerEvents: "auto",
+        paddingTop: 14,
+        paddingBottom: 14,
+        transition: {
+          duration: reduceMotion ? 0 : 0.26,
+          ease: reduceMotion ? "linear" : menuEase,
+          when: "beforeChildren",
+        },
       },
-    },
-  };
+    }),
+    [menuEase, reduceMotion],
+  );
 
   const navContainerBackground = scrolled
     ? "bg-white border border-slate-200/70 shadow-lg"
@@ -405,7 +405,7 @@ export function Navbar13() {
               style={{
                 overflow: "hidden",
                 transformOrigin: "top",
-                willChange: "clip-path, opacity, padding",
+                willChange: "height, opacity",
               }}
               className="md:hidden flex flex-col gap-[10px] border-t border-slate-200/60 px-[18px]"
             >

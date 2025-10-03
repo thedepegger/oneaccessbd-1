@@ -22,6 +22,11 @@ export function Cta51() {
   const secondaryCta = isBangla ? "বিস্তারিত সুবিধা দেখুন" : "See Benefits";
 
   const handleClaimDeal = React.useCallback(() => {
+    if (typeof window !== "undefined" && window.twq) {
+      window.twq("event", "tw-qks4c-qks4e", {
+        status: "clicked",
+      });
+    }
     window.open(
       "https://www.facebook.com/share/p/16GuxvEB4y/",
       "_blank",
